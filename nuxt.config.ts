@@ -1,0 +1,10 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  devtools: { enabled: true },
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/icon", "nuxt-snackbar"],
+  snackbar: {
+    bottom: true,
+    right: true,
+    duration: 5000,
+  },
+});
