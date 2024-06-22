@@ -27,7 +27,7 @@
 
 Installation:
 
-First of all you need create a sh file on steam-deck-web-app-generator then open the folder of where you downloaded the file via terminal(konsole):
+First of all you need create a sh file on <a href="https://steam-deck-web-app-generator.vercel.app/">steam-deck-web-app-generator </a> then open the folder of where you downloaded the file via terminal(konsole):
 
 ```bash
 chmod +x steam-web-app-generator.sh
