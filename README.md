@@ -1,5 +1,5 @@
 <p align="center" class="logo-section">
-<img src="https://raw.githubusercontent.com/halitsever/steam-deck-web-app-generator/main/public/icon.svg" height="80" width="80"/>
+<img src="https://raw.githubusercontent.com/halitsever/steam-deck-web-app-generator/main/public/icon.png" height="80" width="80"/>
 </br>
 <img src="https://halitsever-api.vercel.app/api/repo-title?title=Steam%20Deck%20Web%20App%20Generator">
 
