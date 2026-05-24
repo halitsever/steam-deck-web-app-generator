@@ -13,5 +13,4 @@ useSeoMeta({
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
-  <NuxtSnackbar />
 </template>
