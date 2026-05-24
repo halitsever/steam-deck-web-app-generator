@@ -16,5 +16,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/icon"]
+  modules: ["@nuxt/icon"],
 });

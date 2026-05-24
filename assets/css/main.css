@@ -85,7 +85,8 @@ textarea {
   width: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background: radial-gradient(120% 80% at 50% -10%, #1b3a55 0%, transparent 55%), radial-gradient(70% 70% at 100% 110%, rgba(126, 59, 214, 0.18) 0%, transparent 60%),
+  background:
+    radial-gradient(120% 80% at 50% -10%, #1b3a55 0%, transparent 55%), radial-gradient(70% 70% at 100% 110%, rgba(126, 59, 214, 0.18) 0%, transparent 60%),
     radial-gradient(60% 60% at 0% 110%, var(--accent-soft) 0%, transparent 60%), linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 100%);
   overflow: hidden;
 }
