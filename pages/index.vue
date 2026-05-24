@@ -1,24 +1,9 @@
 <script setup lang="ts">
-const {
-  url,
-  appName,
-  useDocs,
-  script,
-  generating,
-  copied,
-  canGenerate,
-  fileName,
-  previewHost,
-  generate,
-  download,
-  copy,
-} = useAppState()
+const { url, appName, useDocs, script, generating, copied, canGenerate, fileName, previewHost, generate, download, copy } = useAppState();
 
-const previewInitial = computed(() =>
-  (appName.value || 'A').trim().charAt(0).toUpperCase() || 'A',
-)
-const lineCount = computed(() => script.value.split('\n').length)
-const byteCount = computed(() => new Blob([script.value]).size)
+const previewInitial = computed(() => (appName.value || "A").trim().charAt(0).toUpperCase() || "A");
+const lineCount = computed(() => script.value.split("\n").length);
+const byteCount = computed(() => new Blob([script.value]).size);
 </script>
 
 <template>
@@ -30,10 +15,7 @@ const byteCount = computed(() => new Blob([script.value]).size)
         NON-STEAM SHORTCUT
       </div>
       <h1 id="panel-title">Add a Web App to your Library</h1>
-      <p class="panel-sub">
-        Turn any website into a Game-Mode launcher. Fill the fields, generate the script,
-        and run it once in Desktop Mode.
-      </p>
+      <p class="panel-sub">Turn any website into a Game-Mode launcher. Fill the fields, generate the script, and run it once in Desktop Mode.</p>
     </div>
 
     <div class="panel-body">
@@ -44,7 +26,7 @@ const byteCount = computed(() => new Blob([script.value]).size)
           <div class="game-tile-glow" />
         </div>
         <div class="game-tile-meta">
-          <div class="game-tile-name">{{ (appName || 'App Name').trim() || 'App Name' }}</div>
+          <div class="game-tile-name">{{ (appName || "App Name").trim() || "App Name" }}</div>
           <div class="game-tile-host">
             <!-- Link icon -->
             <svg viewBox="0 0 24 24" fill="none" width="12" height="12" aria-hidden="true">
@@ -69,14 +51,7 @@ const byteCount = computed(() => new Blob([script.value]).size)
             <span class="field-hint">Full address including https://</span>
           </label>
           <div class="field-control">
-            <input
-              id="f-url"
-              v-model="url"
-              type="url"
-              placeholder="https://google.com"
-              autocomplete="off"
-              spellcheck="false"
-            />
+            <input id="f-url" v-model="url" type="url" placeholder="https://google.com" autocomplete="off" spellcheck="false" />
           </div>
         </div>
 
@@ -94,14 +69,7 @@ const byteCount = computed(() => new Blob([script.value]).size)
             <span class="field-hint">Shown in your Steam Library</span>
           </label>
           <div class="field-control">
-            <input
-              id="f-name"
-              v-model="appName"
-              type="text"
-              placeholder="Google"
-              autocomplete="off"
-              maxlength="48"
-            />
+            <input id="f-name" v-model="appName" type="text" placeholder="Google" autocomplete="off" maxlength="48" />
           </div>
         </div>
 
@@ -119,32 +87,21 @@ const byteCount = computed(() => new Blob([script.value]).size)
               <div class="toggle-hint">Recommended — the script will be created here.</div>
             </div>
           </div>
-          <button
-            type="button"
-            role="switch"
-            :aria-checked="useDocs"
-            :class="['switch', { on: useDocs }]"
-            @click="useDocs = !useDocs"
-          >
+          <button type="button" role="switch" :aria-checked="useDocs" :class="['switch', { on: useDocs }]" @click="useDocs = !useDocs">
             <span class="switch-thumb" />
           </button>
         </div>
       </div>
 
       <!-- Generate CTA -->
-      <button
-        type="button"
-        class="cta"
-        :disabled="!canGenerate"
-        @click="generate"
-      >
+      <button type="button" class="cta" :disabled="!canGenerate" @click="generate">
         <span class="cta-glow" aria-hidden="true" />
         <span class="cta-label">
           <!-- Spark / sparkle icon -->
           <svg viewBox="0 0 24 24" fill="none" width="18" height="18" aria-hidden="true">
             <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z" fill="currentColor" />
           </svg>
-          {{ generating ? 'GENERATING…' : 'GENERATE SCRIPT' }}
+          {{ generating ? "GENERATING…" : "GENERATE SCRIPT" }}
         </span>
         <span class="cta-pad" aria-hidden="true">
           <span class="pad-glyph" style="background: #3aa84a"><span>A</span></span>
@@ -172,7 +129,7 @@ const byteCount = computed(() => new Blob([script.value]).size)
             <rect x="8" y="8" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.8" />
             <path d="M4 16V6a2 2 0 012-2h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
           </svg>
-          <span>{{ copied ? 'COPIED' : 'COPY' }}</span>
+          <span>{{ copied ? "COPIED" : "COPY" }}</span>
         </button>
         <button class="term-btn primary" aria-label="Download script" @click="download">
           <!-- Download icon -->

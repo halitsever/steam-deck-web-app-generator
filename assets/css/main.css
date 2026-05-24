@@ -39,20 +39,22 @@
 
   --pad-stage: clamp(16px, 3.5vw, 48px);
 
-  --shadow-panel:
-    0 1px 0 rgba(255, 255, 255, 0.06) inset,
-    0 0 0 1px rgba(255, 255, 255, 0.04),
-    0 30px 80px -20px rgba(0, 0, 0, 0.6),
-    0 8px 24px -8px rgba(0, 0, 0, 0.5);
+  --shadow-panel: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 0 0 1px rgba(255, 255, 255, 0.04), 0 30px 80px -20px rgba(0, 0, 0, 0.6), 0 8px 24px -8px rgba(0, 0, 0, 0.5);
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 /* Nuxt uses #__nuxt as root container, not #root */
-html, body, #__nuxt { height: 100%; }
+html,
+body,
+#__nuxt {
+  height: 100%;
+}
 body {
   margin: 0;
-  font-family: 'Manrope', system-ui, sans-serif;
+  font-family: "Manrope", system-ui, sans-serif;
   font-weight: 500;
   color: var(--ink-0);
   background: var(--bg-0);
@@ -61,10 +63,18 @@ body {
   overflow: hidden;
 }
 
-button { font-family: inherit; }
-input, textarea { font-family: inherit; }
+button {
+  font-family: inherit;
+}
+input,
+textarea {
+  font-family: inherit;
+}
 
-::selection { background: var(--accent-soft); color: #fff; }
+::selection {
+  background: var(--accent-soft);
+  color: #fff;
+}
 
 /* =====================================================================
    Deck screen — the full-bleed gaming mode canvas
@@ -75,24 +85,23 @@ input, textarea { font-family: inherit; }
   width: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background:
-    radial-gradient(120% 80% at 50% -10%, #1b3a55 0%, transparent 55%),
-    radial-gradient(70% 70% at 100% 110%, rgba(126, 59, 214, 0.18) 0%, transparent 60%),
-    radial-gradient(60% 60% at 0% 110%, var(--accent-soft) 0%, transparent 60%),
-    linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 100%);
+  background: radial-gradient(120% 80% at 50% -10%, #1b3a55 0%, transparent 55%), radial-gradient(70% 70% at 100% 110%, rgba(126, 59, 214, 0.18) 0%, transparent 60%),
+    radial-gradient(60% 60% at 0% 110%, var(--accent-soft) 0%, transparent 60%), linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 100%);
   overflow: hidden;
 }
 
 .bg-noise {
-  position: absolute; inset: 0;
+  position: absolute;
+  inset: 0;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.06 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   opacity: 0.5;
   pointer-events: none;
   mix-blend-mode: overlay;
 }
 .bg-vignette {
-  position: absolute; inset: 0;
-  background: radial-gradient(100% 70% at 50% 50%, transparent 50%, rgba(0,0,0,0.45) 100%);
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(100% 70% at 50% 50%, transparent 50%, rgba(0, 0, 0, 0.45) 100%);
   pointer-events: none;
 }
 
@@ -107,7 +116,7 @@ input, textarea { font-family: inherit; }
   align-items: center;
   gap: var(--gap-4);
   padding: 14px clamp(16px, 3vw, 32px);
-  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.2) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.2) 100%);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(6px);
 }
@@ -119,7 +128,8 @@ input, textarea { font-family: inherit; }
   min-width: 0;
 }
 .brand-mark {
-  width: 24px; height: 24px;
+  width: 24px;
+  height: 24px;
   color: var(--accent);
   filter: drop-shadow(0 0 6px var(--accent-glow));
   flex-shrink: 0;
@@ -155,9 +165,14 @@ input, textarea { font-family: inherit; }
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  transition: color .18s ease, background .18s ease, box-shadow .18s ease;
+  transition:
+    color 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease;
 }
-.tab:hover { color: var(--ink-0); }
+.tab:hover {
+  color: var(--ink-0);
+}
 .tab.active {
   color: #04121b;
   background: var(--accent);
@@ -174,15 +189,17 @@ input, textarea { font-family: inherit; }
   color: var(--ink-1);
 }
 .tray-btn {
-  width: 32px; height: 32px;
+  width: 32px;
+  height: 32px;
   display: inline-flex;
-  align-items: center; justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px;
   color: var(--ink-1);
   text-decoration: none;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--line);
-  transition: all .15s ease;
+  transition: all 0.15s ease;
 }
 .tray-btn:hover {
   color: var(--ink-0);
@@ -215,8 +232,7 @@ input, textarea { font-family: inherit; }
    ===================================================================== */
 .panel {
   position: relative;
-  background:
-    linear-gradient(180deg, rgba(36, 51, 67, 0.55) 0%, rgba(19, 28, 39, 0.85) 100%);
+  background: linear-gradient(180deg, rgba(36, 51, 67, 0.55) 0%, rgba(19, 28, 39, 0.85) 100%);
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
   padding: clamp(20px, 3vw, 36px);
@@ -249,15 +265,21 @@ input, textarea { font-family: inherit; }
   text-transform: uppercase;
 }
 .panel-eyebrow .dot {
-  width: 6px; height: 6px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: var(--accent);
   box-shadow: 0 0 8px var(--accent-glow);
   animation: pulse 2.4s ease-in-out infinite;
 }
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
 }
 .panel h1 {
   font-size: clamp(24px, 3.4vw, 34px);
@@ -295,10 +317,9 @@ input, textarea { font-family: inherit; }
   height: 88px;
   border-radius: 10px;
   overflow: hidden;
-  background:
-    radial-gradient(60% 60% at 30% 30%, var(--accent-soft) 0%, transparent 70%),
-    linear-gradient(135deg, var(--bg-3), var(--bg-1));
-  display: grid; place-items: center;
+  background: radial-gradient(60% 60% at 30% 30%, var(--accent-soft) 0%, transparent 70%), linear-gradient(135deg, var(--bg-3), var(--bg-1));
+  display: grid;
+  place-items: center;
   border: 1px solid var(--line-strong);
 }
 .game-tile-initial {
@@ -309,7 +330,8 @@ input, textarea { font-family: inherit; }
   text-shadow: 0 2px 12px var(--accent-glow);
 }
 .game-tile-glow {
-  position: absolute; inset: -20%;
+  position: absolute;
+  inset: -20%;
   background: radial-gradient(circle, var(--accent-soft), transparent 60%);
   filter: blur(20px);
   opacity: 0.6;
@@ -336,7 +358,7 @@ input, textarea { font-family: inherit; }
   border-radius: 999px;
   font-size: 12px;
   color: var(--ink-2);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   letter-spacing: 0;
 }
 
@@ -367,14 +389,18 @@ input, textarea { font-family: inherit; }
 }
 .field-icon {
   display: inline-flex;
-  width: 24px; height: 24px;
-  align-items: center; justify-content: center;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--line);
   color: var(--accent);
 }
-.field-label-text { color: var(--ink-0); }
+.field-label-text {
+  color: var(--ink-0);
+}
 .field-hint {
   font-size: 11px;
   font-weight: 500;
@@ -395,7 +421,10 @@ input, textarea { font-family: inherit; }
   font-weight: 600;
   letter-spacing: -0.005em;
   outline: none;
-  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
 }
 .field-control input::placeholder {
   color: var(--ink-4);
@@ -432,14 +461,19 @@ input, textarea { font-family: inherit; }
   min-width: 0;
 }
 .toggle-icon {
-  width: 32px; height: 32px;
-  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--line);
   color: var(--accent);
 }
-.toggle-text { min-width: 0; }
+.toggle-text {
+  min-width: 0;
+}
 .toggle-label {
   font-weight: 700;
   font-size: 14px;
@@ -461,7 +495,10 @@ input, textarea { font-family: inherit; }
   height: 30px;
   border-radius: 999px;
   cursor: pointer;
-  transition: background .18s ease, border-color .18s ease, box-shadow .18s ease;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
   flex-shrink: 0;
 }
 .switch-thumb {
@@ -474,7 +511,7 @@ input, textarea { font-family: inherit; }
   background: linear-gradient(180deg, #f3f6fa, #c5cdd8);
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-  transition: left .2s cubic-bezier(.4,1.4,.6,1);
+  transition: left 0.2s cubic-bezier(0.4, 1.4, 0.6, 1);
 }
 .switch.on {
   background: var(--accent);
@@ -510,7 +547,10 @@ input, textarea { font-family: inherit; }
   font-size: 15px;
   cursor: pointer;
   overflow: hidden;
-  transition: transform .12s ease, box-shadow .18s ease, filter .18s ease;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.18s ease,
+    filter 0.18s ease;
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.2) inset,
     0 8px 30px var(--accent-soft);
@@ -522,7 +562,9 @@ input, textarea { font-family: inherit; }
     0 12px 36px var(--accent-glow);
   filter: brightness(1.06);
 }
-.cta:active:not(:disabled) { transform: translateY(0); }
+.cta:active:not(:disabled) {
+  transform: translateY(0);
+}
 .cta:disabled {
   cursor: not-allowed;
   filter: saturate(0.4) brightness(0.7);
@@ -531,7 +573,7 @@ input, textarea { font-family: inherit; }
   position: absolute;
   inset: -50% -10% auto -10%;
   height: 200%;
-  background: radial-gradient(circle at 50% 0%, rgba(255,255,255,0.4), transparent 60%);
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.4), transparent 60%);
   pointer-events: none;
 }
 .cta-label {
@@ -541,7 +583,9 @@ input, textarea { font-family: inherit; }
   justify-content: center;
   font-variant-numeric: tabular-nums;
 }
-.cta-pad { display: inline-flex; }
+.cta-pad {
+  display: inline-flex;
+}
 
 /* =====================================================================
    Terminal panel — script preview
@@ -565,19 +609,26 @@ input, textarea { font-family: inherit; }
   gap: 6px;
 }
 .lt {
-  width: 12px; height: 12px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   display: inline-block;
 }
-.lt.r { background: #e64a4a; }
-.lt.y { background: #d8b03a; }
-.lt.g { background: #3aa84a; }
+.lt.r {
+  background: #e64a4a;
+}
+.lt.y {
+  background: #d8b03a;
+}
+.lt.g {
+  background: #3aa84a;
+}
 
 .term-title {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   color: var(--ink-2);
   white-space: nowrap;
@@ -585,8 +636,13 @@ input, textarea { font-family: inherit; }
   text-overflow: ellipsis;
   justify-self: center;
 }
-.term-path { color: var(--ink-3); }
-.term-file { color: var(--ink-0); font-weight: 700; }
+.term-path {
+  color: var(--ink-3);
+}
+.term-file {
+  color: var(--ink-0);
+  font-weight: 700;
+}
 
 .term-actions {
   display: flex;
@@ -605,7 +661,7 @@ input, textarea { font-family: inherit; }
   font-size: 11px;
   letter-spacing: 0.1em;
   cursor: pointer;
-  transition: all .15s ease;
+  transition: all 0.15s ease;
 }
 .term-btn:hover {
   background: rgba(255, 255, 255, 0.08);
@@ -626,7 +682,7 @@ input, textarea { font-family: inherit; }
 .term-body {
   margin: 0;
   padding: 20px 22px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 13px;
   line-height: 1.7;
   color: #c5d3e3;
@@ -635,7 +691,9 @@ input, textarea { font-family: inherit; }
   max-height: 360px;
   overflow-y: auto;
 }
-.term-body code { color: inherit; }
+.term-body code {
+  color: inherit;
+}
 
 .term-footer {
   display: flex;
@@ -646,7 +704,7 @@ input, textarea { font-family: inherit; }
   border-top: 1px solid var(--line);
   background: rgba(0, 0, 0, 0.25);
   font-size: 11px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   color: var(--ink-3);
   flex-wrap: wrap;
 }
@@ -658,7 +716,8 @@ input, textarea { font-family: inherit; }
   letter-spacing: 0.06em;
 }
 .status-dot {
-  width: 8px; height: 8px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: var(--ok);
   box-shadow: 0 0 8px rgba(58, 168, 74, 0.6);
@@ -673,7 +732,9 @@ input, textarea { font-family: inherit; }
 /* =====================================================================
    Donate
    ===================================================================== */
-.donate-panel { text-align: left; }
+.donate-panel {
+  text-align: left;
+}
 .donate-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -689,7 +750,7 @@ input, textarea { font-family: inherit; }
   border-radius: var(--radius-sm);
   text-decoration: none;
   color: var(--ink-0);
-  transition: all .18s ease;
+  transition: all 0.18s ease;
 }
 .donate-card:hover {
   border-color: var(--accent);
@@ -698,15 +759,24 @@ input, textarea { font-family: inherit; }
   transform: translateY(-2px);
 }
 .donate-card-icon {
-  width: 44px; height: 44px;
-  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--line-strong);
   color: var(--accent);
 }
-.donate-card-title { font-weight: 800; font-size: 17px; }
-.donate-card-sub { color: var(--ink-2); font-size: 13px; }
+.donate-card-title {
+  font-weight: 800;
+  font-size: 17px;
+}
+.donate-card-sub {
+  color: var(--ink-2);
+  font-size: 13px;
+}
 
 .ghost-btn {
   appearance: none;
@@ -738,14 +808,17 @@ input, textarea { font-family: inherit; }
   align-items: center;
   gap: var(--gap-3);
   padding: 10px clamp(16px, 3vw, 32px);
-  background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.15) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.15) 100%);
   border-top: 1px solid var(--line);
   backdrop-filter: blur(6px);
   overflow-x: auto;
   scrollbar-width: none;
 }
-.hint-bar::-webkit-scrollbar { display: none; }
-.hints-left, .hints-right {
+.hint-bar::-webkit-scrollbar {
+  display: none;
+}
+.hints-left,
+.hints-right {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -763,7 +836,9 @@ input, textarea { font-family: inherit; }
   font-size: 12px;
   letter-spacing: 0.04em;
   cursor: pointer;
-  transition: background .15s ease, color .15s ease;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
   white-space: nowrap;
   font-family: inherit;
 }
@@ -785,14 +860,14 @@ input, textarea { font-family: inherit; }
   color: #fff;
   font-weight: 800;
   font-size: 11px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.4) inset,
     0 -1px 0 rgba(0, 0, 0, 0.3) inset,
     0 2px 6px rgba(0, 0, 0, 0.5);
 }
 .kbd {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 10px;
   font-weight: 700;
   padding: 3px 7px;
@@ -807,12 +882,19 @@ input, textarea { font-family: inherit; }
    Responsive — Tablet (<= 900px)
    ===================================================================== */
 @media (max-width: 900px) {
-  .panel { padding: 20px; }
+  .panel {
+    padding: 20px;
+  }
   .game-tile {
     grid-template-columns: 64px 1fr;
   }
-  .game-tile-art { width: 64px; height: 64px; }
-  .game-tile-initial { font-size: 30px; }
+  .game-tile-art {
+    width: 64px;
+    height: 64px;
+  }
+  .game-tile-initial {
+    font-size: 30px;
+  }
 }
 
 /* =====================================================================
@@ -827,42 +909,101 @@ input, textarea { font-family: inherit; }
     gap: 10px;
     padding: 10px 14px;
   }
-  .brand { grid-area: brand; }
-  .tray { grid-area: tray; gap: 8px; }
-  .tabs { grid-area: tabs; justify-self: start; }
+  .brand {
+    grid-area: brand;
+  }
+  .tray {
+    grid-area: tray;
+    gap: 8px;
+  }
+  .tabs {
+    grid-area: tabs;
+    justify-self: start;
+  }
 
-  .panel { padding: 18px 16px; }
-  .panel h1 { font-size: 22px; }
-  .panel-sub { font-size: 13px; }
+  .panel {
+    padding: 18px 16px;
+  }
+  .panel h1 {
+    font-size: 22px;
+  }
+  .panel-sub {
+    font-size: 13px;
+  }
 
-  .brand-name { font-size: 13px; }
+  .brand-name {
+    font-size: 13px;
+  }
 
-  .field-label { grid-template-columns: auto 1fr; }
-  .field-hint { display: none; }
+  .field-label {
+    grid-template-columns: auto 1fr;
+  }
+  .field-hint {
+    display: none;
+  }
 
-  .toggle-row { grid-template-columns: 1fr; gap: 12px; }
-  .toggle-row .switch { justify-self: start; }
+  .toggle-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .toggle-row .switch {
+    justify-self: start;
+  }
 
-  .cta { padding: 16px 18px; font-size: 13px; }
-  .cta-pad { display: none; }
+  .cta {
+    padding: 16px 18px;
+    font-size: 13px;
+  }
+  .cta-pad {
+    display: none;
+  }
 
-  .term-chrome { grid-template-columns: 1fr; gap: 8px; padding: 10px 12px; }
-  .term-title { justify-self: start; }
-  .term-actions { justify-self: start; }
-  .term-body { padding: 14px; font-size: 12px; max-height: 280px; }
+  .term-chrome {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+  .term-title {
+    justify-self: start;
+  }
+  .term-actions {
+    justify-self: start;
+  }
+  .term-body {
+    padding: 14px;
+    font-size: 12px;
+    max-height: 280px;
+  }
 
-  .hint-bar { padding: 8px 12px; }
-  .hint { padding: 6px 8px; font-size: 11px; gap: 6px; }
-  .pad-glyph { width: 18px; height: 18px; font-size: 10px; }
+  .hint-bar {
+    padding: 8px 12px;
+  }
+  .hint {
+    padding: 6px 8px;
+    font-size: 11px;
+    gap: 6px;
+  }
+  .pad-glyph {
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+  }
 }
 
 /* =====================================================================
    Very narrow (<= 380px) — Steam Deck portrait or smallest phones
    ===================================================================== */
 @media (max-width: 380px) {
-  .brand-name { font-size: 12px; }
-  .tabs .tab { padding: 6px 12px; font-size: 11px; }
-  .hint span:not(.pad-glyph) { display: none; }
+  .brand-name {
+    font-size: 12px;
+  }
+  .tabs .tab {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+  .hint span:not(.pad-glyph) {
+    display: none;
+  }
 }
 
 /* =====================================================================

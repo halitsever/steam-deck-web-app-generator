@@ -1,16 +1,16 @@
 <script setup lang="ts">
-const route = useRoute()
-const { canGenerate, script, generate, download } = useAppState()
+const route = useRoute();
+const { canGenerate, script, generate, download } = useAppState();
 
-const hasScript = computed(() => script.value.length > 0)
+const hasScript = computed(() => script.value.length > 0);
 
 const handleDonate = () => {
-  navigateTo(route.path === '/donate' ? '/' : '/donate')
-}
+  navigateTo(route.path === "/donate" ? "/" : "/donate");
+};
 
 const handleGithub = () => {
-  window.open('https://github.com/halitsever/steam-deck-web-app-generator', '_blank')
-}
+  window.open("https://github.com/halitsever/steam-deck-web-app-generator", "_blank");
+};
 </script>
 
 <template>

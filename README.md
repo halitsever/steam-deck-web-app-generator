@@ -50,11 +50,9 @@ Results:
 
 In my case i did it for Blutv (Turkish stream platform's website) and its works very well.
 
-
 <img src="https://i.ibb.co/cTKs3ZC/20240622165206-1.jpg"/>
 <br/><br/>
 <img src="https://i.ibb.co/njPsjDS/Screenshot-20240622-170008.png"/>
-
 
 <a align="center" href="https://github.com/halitsever/repo_name/issues">
 <img src="https://halitsever-api.vercel.app/api/issue"/>
