@@ -54,7 +54,7 @@ In my case i did it for Blutv (Turkish stream platform's website) and its works 
 <br/><br/>
 <img src="https://i.ibb.co/njPsjDS/Screenshot-20240622-170008.png" alt="BluTV website running full screen in Chrome kiosk mode on the Steam Deck"/>
 
-<a align="center" href="https://github.com/halitsever/repo_name/issues">
+<a align="center" href="https://github.com/halitsever/steam-deck-web-app-generator/issues">
 <img src="https://halitsever-api.vercel.app/api/issue"/>
 </a>
 
