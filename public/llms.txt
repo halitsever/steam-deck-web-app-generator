@@ -1,0 +1,15 @@
+# Steam Deck Web App Generator
+
+> A free web app that generates a bash script which adds any website to Steam on the Steam Deck as a non-Steam game, opened in Chrome kiosk mode from Game Mode. Built with Nuxt.
+
+Enter an app name and a URL, download the generated .sh file, then in Desktop Mode run `chmod +x` on it and execute it once. It needs the flatpak version of Google Chrome on the Steam Deck and creates the launcher in ~/Documents unless told otherwise.
+
+## Docs
+
+- [Generator](https://steam-deck-web-app-generator.vercel.app/): create and download the shortcut script
+- [README](https://github.com/halitsever/steam-deck-web-app-generator/blob/main/README.md): installation steps, requirements and screenshots
+
+## Optional
+
+- [Support the project](https://steam-deck-web-app-generator.vercel.app/donate): sponsor and star links
+- [Source](https://github.com/halitsever/steam-deck-web-app-generator): repository
