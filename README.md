@@ -1,17 +1,17 @@
 <p align="center" class="logo-section">
-<img src="https://raw.githubusercontent.com/halitsever/steam-deck-web-app-generator/main/public/icon.png" height="80" width="80"/>
+<img src="https://raw.githubusercontent.com/halitsever/steam-deck-web-app-generator/main/public/icon.png" alt="Steam Deck Web App Generator icon" height="80" width="80"/>
 </br>
 <img src="https://halitsever-api.vercel.app/api/repo-title?title=Steam%20Deck%20Web%20App%20Generator">
 
 <p align="center">
-🛠️ Steam deck web application generator, create shortcut scripts for your favorite websites to game mode
+🛠️ Steam Deck web app generator: a Nuxt app that creates a shortcut script to add any website to Steam as a non-Steam game, so it opens in Chrome from Game Mode.
 <br>
 <br/>
 <br/>
-<img src="https://img.shields.io/github/sponsors/halitsever"/>
+<img src="https://img.shields.io/github/sponsors/halitsever" alt="GitHub Sponsors"/>
 </p>
 <p align="center">
-<a align="center" href="#">Documentation</a>
+<a align="center" href="https://steam-deck-web-app-generator.vercel.app/">Documentation</a>
   </p>
 </p>
 
@@ -50,13 +50,18 @@ Results:
 
 In my case i did it for Blutv (Turkish stream platform's website) and its works very well.
 
-<img src="https://i.ibb.co/cTKs3ZC/20240622165206-1.jpg"/>
+<img src="https://i.ibb.co/cTKs3ZC/20240622165206-1.jpg" alt="Blu Tv added as a non-Steam game in the Steam Deck Game Mode library"/>
 <br/><br/>
-<img src="https://i.ibb.co/njPsjDS/Screenshot-20240622-170008.png"/>
+<img src="https://i.ibb.co/njPsjDS/Screenshot-20240622-170008.png" alt="BluTV website running full screen in Chrome kiosk mode on the Steam Deck"/>
 
 <a align="center" href="https://github.com/halitsever/repo_name/issues">
 <img src="https://halitsever-api.vercel.app/api/issue"/>
 </a>
+
+<p align="center">
+Found a bug or have an idea? Open an <a href="https://github.com/halitsever/steam-deck-web-app-generator/issues">issue</a>.<br/>
+Read the <a href=".github/CONTRIBUTING.md">contributing guide</a> before sending a pull request.
+</p>
 
 <a align="center">
 <img src="https://halitsever-api.vercel.app/api/sponsor"/>

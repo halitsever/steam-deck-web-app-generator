@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://steam-deck-web-app-generator.vercel.app/sitemap.xml

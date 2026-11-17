@@ -1,3 +1,10 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: "Support Steam Deck Web App Generator",
+  ogTitle: "Support Steam Deck Web App Generator",
+});
+</script>
+
 <template>
   <section class="panel donate-panel">
     <div class="panel-header">
