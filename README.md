@@ -44,7 +44,7 @@ After that you can switch to gaming mode again, it should create a YourAppName.s
 
 You can change the icons of apps via steam grid db extension of decky loader.
 
-<b>Note</b>: You need installed chrome(flatpak version-default one) on your steam deck. Use an app name without spaces or apostrophes.
+<b>Note</b>: You need installed chrome(flatpak version-default one) on your steam deck.
 
 Guides: [YouTube](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-youtube), [Netflix](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-netflix), [Xbox Cloud Gaming](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-xbox-cloud-gaming), [GeForce NOW](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-geforce-now), [web browser in Game Mode](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-web-browser) and [adding a non-Steam game](https://steam-deck-web-app-generator.vercel.app/guides/add-non-steam-game).
 

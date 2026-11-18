@@ -35,6 +35,6 @@
     </p>
 
     <h2>Add play.geforcenow.com as a fallback</h2>
-    <GuideSteps url="https://play.geforcenow.com" name="GeForceNOW" />
+    <GuideSteps url="https://play.geforcenow.com" name="GeForce NOW" />
   </GuidePage>
 </template>

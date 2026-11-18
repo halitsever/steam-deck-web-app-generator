@@ -28,6 +28,6 @@
       <a href="https://support.xbox.com/help/games-apps/cloud-gaming/supported_browsers" target="_blank" rel="noreferrer">list of supported browsers</a>
       covers Windows, macOS, ChromeOS, Android, iOS and iPadOS but not Linux, so Chrome on SteamOS is outside what Microsoft supports. If the game does not react to the Deck's buttons, switch to the Edge setup above.
     </p>
-    <GuideSteps url="https://www.xbox.com/play" name="XboxCloudGaming" />
+    <GuideSteps url="https://www.xbox.com/play" name="Xbox Cloud Gaming" />
   </GuidePage>
 </template>

@@ -2,7 +2,7 @@
 
 > A free web app that generates a bash script which adds any website or web app to Steam Deck Game Mode as a non-Steam game, opened in Chrome kiosk mode. Built with Nuxt.
 
-Enter an app name and a URL, download the generated .sh file, then in Desktop Mode run `chmod +x` on it and execute it once. It needs the flatpak version of Google Chrome on the Steam Deck and creates the launcher in ~/Documents unless told otherwise. The app name should have no spaces or apostrophes, because the script uses it unquoted.
+Enter an app name and a URL, download the generated .sh file, then in Desktop Mode run `chmod +x` on it and execute it once. It needs the flatpak version of Google Chrome on the Steam Deck and creates the launcher in ~/Documents unless told otherwise. The app name becomes the launcher file name, so it cannot contain a slash.
 
 ## Docs
 

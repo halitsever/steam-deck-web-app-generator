@@ -45,10 +45,7 @@ const fileName = computed(
 
   <h2>Before you run it</h2>
   <ul>
-    <li>
-      Keep spaces and apostrophes out of the App Name. The script uses the name unquoted in two commands, so <code>Xbox Cloud Gaming</code> breaks it while <code>XboxCloudGaming</code> works. Rename the shortcut in Steam
-      afterwards if you want a nicer label.
-    </li>
+    <li>The App Name becomes the launcher's file name, so spaces and apostrophes are fine but a slash is not.</li>
     <li>
       Leave <code>~/Documents/{{ name }}.sh</code> where it is. The Steam shortcut points at that file.
     </li>
