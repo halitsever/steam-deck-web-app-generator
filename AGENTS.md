@@ -13,7 +13,8 @@ Nuxt 4 web app that generates a bash script which adds a website to Steam as a n
 - The husky pre-commit hook runs `prettier --write .` over the whole repo and does not restage. After a commit, check `git status`; if files changed, commit them as a normal follow-up commit.
 - Prettier uses `printWidth: 220`, so long lines stay on one line.
 - `server/api/web-app/create.ts` builds the script. It interpolates `appName` and `siteUrl` into single-quoted bash, runs the flatpak `com.google.Chrome` in kiosk mode and calls `steamos-add-to-steam`. Keep the quoting intact; the generated script only runs on SteamOS, so CI cannot exercise it.
-- `public/sitemap.xml` is hand-written and lists `/` and `/donate`. Add new pages to it and to `public/llms.txt`.
+- `public/sitemap.xml` is hand-written and lists `/`, `/donate`, `/guides` and every guide. Add new pages to it and to `public/llms.txt`.
+- Guides live in `pages/guides/` and are listed in `utils/guides.ts`, which feeds the home page, the guides index and each guide's footer. `components/guide/Steps.vue` holds the shared setup steps: change it when the generated script changes.
 - Site-wide SEO tags, canonical URL and JSON-LD live in `app.vue`; a page sets its own title with `useSeoMeta`.
 
 ## Deploy

@@ -1,12 +1,12 @@
 <script setup lang="ts">
 const site = "https://steam-deck-web-app-generator.vercel.app";
-const description = "Turn any website into a Steam Deck Game Mode app. Generate a shortcut script that adds the site to Steam as a non-Steam game and opens it in Chrome.";
+const description = "Add any website or web app to Steam Deck Game Mode as a non-Steam game. Generate a script that adds a full-screen Chrome shortcut for the site to your Steam library.";
 const route = useRoute();
 const pageUrl = computed(() => site + route.path);
 
 useSeoMeta({
-  title: "Steam Deck Web App Generator | Generate Website to Web App for Steam Deck",
-  ogTitle: "Steam Deck Web App Generator",
+  title: "Add Websites to Steam Deck Game Mode | Steam Deck Web App Generator",
+  ogTitle: "Add Websites to Steam Deck Game Mode",
   description,
   ogDescription: description,
   ogType: "website",

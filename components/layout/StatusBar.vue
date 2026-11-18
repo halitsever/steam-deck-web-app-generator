@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
-const activeTab = computed(() => (route.path === "/donate" ? "donate" : "create"));
+const activeTab = computed(() => (route.path === "/donate" ? "donate" : route.path.startsWith("/guides") ? "guides" : "create"));
 </script>
 
 <template>
@@ -12,13 +12,16 @@ const activeTab = computed(() => (route.path === "/donate" ? "donate" : "create"
       <span class="brand-name">Steam Deck Web App Generator</span>
     </div>
 
-    <nav class="tabs" role="tablist" aria-label="Navigation">
-      <button role="tab" :aria-selected="activeTab === 'create'" :class="['tab', { active: activeTab === 'create' }]" @click="navigateTo('/')">
+    <nav class="tabs" aria-label="Navigation">
+      <NuxtLink to="/" :aria-current="activeTab === 'create' ? 'page' : undefined" :class="['tab', { active: activeTab === 'create' }]">
         <span>CREATE</span>
-      </button>
-      <button role="tab" :aria-selected="activeTab === 'donate'" :class="['tab', { active: activeTab === 'donate' }]" @click="navigateTo('/donate')">
+      </NuxtLink>
+      <NuxtLink to="/guides" :aria-current="activeTab === 'guides' ? 'page' : undefined" :class="['tab', { active: activeTab === 'guides' }]">
+        <span>GUIDES</span>
+      </NuxtLink>
+      <NuxtLink to="/donate" :aria-current="activeTab === 'donate' ? 'page' : undefined" :class="['tab', { active: activeTab === 'donate' }]">
         <span>DONATE</span>
-      </button>
+      </NuxtLink>
     </nav>
 
     <div class="tray">

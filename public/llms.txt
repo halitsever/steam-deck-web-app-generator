@@ -1,13 +1,23 @@
 # Steam Deck Web App Generator
 
-> A free web app that generates a bash script which adds any website to Steam on the Steam Deck as a non-Steam game, opened in Chrome kiosk mode from Game Mode. Built with Nuxt.
+> A free web app that generates a bash script which adds any website or web app to Steam Deck Game Mode as a non-Steam game, opened in Chrome kiosk mode. Built with Nuxt.
 
-Enter an app name and a URL, download the generated .sh file, then in Desktop Mode run `chmod +x` on it and execute it once. It needs the flatpak version of Google Chrome on the Steam Deck and creates the launcher in ~/Documents unless told otherwise.
+Enter an app name and a URL, download the generated .sh file, then in Desktop Mode run `chmod +x` on it and execute it once. It needs the flatpak version of Google Chrome on the Steam Deck and creates the launcher in ~/Documents unless told otherwise. The app name should have no spaces or apostrophes, because the script uses it unquoted.
 
 ## Docs
 
 - [Generator](https://steam-deck-web-app-generator.vercel.app/): create and download the shortcut script
 - [README](https://github.com/halitsever/steam-deck-web-app-generator/blob/main/README.md): installation steps, requirements and screenshots
+
+## Guides
+
+- [All guides](https://steam-deck-web-app-generator.vercel.app/guides): index of the Steam Deck Game Mode guides
+- [YouTube on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-youtube): add youtube.com to Game Mode as a Chrome shortcut
+- [Netflix on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-netflix): Netflix shortcut setup and Netflix's own notes on Chrome for Linux
+- [Xbox Cloud Gaming on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-xbox-cloud-gaming): Microsoft's Edge setup and the Chrome shortcut alternative
+- [GeForce NOW on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-geforce-now): NVIDIA's Steam Deck app first, a browser shortcut as fallback
+- [Web browser in Game Mode](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-web-browser): add Chrome itself or a single site to the library
+- [Add a non-Steam game](https://steam-deck-web-app-generator.vercel.app/guides/add-non-steam-game): Valve's steps and how the generator adds a website as one
 
 ## Optional
 

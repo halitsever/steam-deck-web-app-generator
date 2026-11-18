@@ -799,6 +799,135 @@ textarea {
 }
 
 /* =====================================================================
+   Guides
+   ===================================================================== */
+.guide-panel h2 {
+  font-size: 19px;
+  font-weight: 800;
+  margin: var(--gap-5) 0 var(--gap-2);
+  line-height: 1.25;
+}
+.guide-panel .panel-header h2 {
+  margin: 0;
+  font-size: clamp(20px, 2.6vw, 26px);
+}
+.guide-body {
+  color: var(--ink-1);
+  font-size: 15px;
+  line-height: 1.65;
+  max-width: 72ch;
+}
+.guide-body p {
+  margin: 0 0 var(--gap-3);
+}
+.guide-body .guide-lead {
+  font-size: 16px;
+  color: var(--ink-0);
+}
+.guide-body ol,
+.guide-body ul {
+  margin: 0 0 var(--gap-3);
+  padding-left: 1.4em;
+}
+.guide-body li {
+  margin-bottom: var(--gap-2);
+}
+.guide-body li::marker {
+  color: var(--accent);
+  font-weight: 700;
+}
+.guide-body a,
+.guide-links a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+.guide-body code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.86em;
+  padding: 1px 6px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+.guide-code {
+  margin: var(--gap-2) 0;
+  padding: 12px 14px;
+  background: #060a10;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  overflow-x: auto;
+  line-height: 1.5;
+}
+.guide-code code {
+  padding: 0;
+  border: 0;
+  background: none;
+  overflow-wrap: normal;
+}
+.guide-footer {
+  margin-top: var(--gap-5);
+  padding-top: var(--gap-4);
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: var(--gap-4);
+}
+.guide-cta {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-decoration: none;
+}
+.guide-panel .guide-more-title {
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin: 0 0 var(--gap-2);
+}
+.guide-links {
+  margin: 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+.guide-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: var(--gap-3);
+}
+.guide-card {
+  display: grid;
+  gap: 6px;
+  height: 100%;
+  padding: 18px;
+  border: 1px solid var(--line-strong);
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--ink-0);
+  transition:
+    border-color 0.18s ease,
+    background 0.18s ease;
+}
+.guide-card:hover {
+  border-color: var(--accent);
+  background: rgba(0, 0, 0, 0.5);
+}
+.guide-card-title {
+  font-weight: 800;
+  font-size: 16px;
+}
+.guide-card-sub {
+  color: var(--ink-2);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =====================================================================
    Hint bar (bottom) — gamepad button hints
    ===================================================================== */
 .hint-bar {
