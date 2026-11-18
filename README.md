@@ -28,23 +28,25 @@
 
 Installation:
 
-First of all you need create a sh file on <a href="https://steam-deck-web-app-generator.vercel.app/">steam-deck-web-app-generator </a> then open the folder of where you downloaded the file via terminal(konsole):
+First of all you need create a sh file on <a href="https://steam-deck-web-app-generator.vercel.app/">steam-deck-web-app-generator </a> then open the folder of where you downloaded the file via terminal(konsole). The file is named after your app name, for example `youtube.sh`:
 
 ```bash
-chmod +x steam-web-app-generator.sh
+chmod +x youtube.sh
 ```
 
 then
 
 ```bash
-./steam-web-app-generator.sh
+./youtube.sh
 ```
 
 After that you can switch to gaming mode again, it should create a YourAppName.sh game in non-steam games.
 
 You can change the icons of apps via steam grid db extension of decky loader.
 
-<b>Note</b>: You need installed chrome(flatpak version-default one) on your steam deck.
+<b>Note</b>: You need installed chrome(flatpak version-default one) on your steam deck. Use an app name without spaces or apostrophes.
+
+Guides: [YouTube](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-youtube), [Netflix](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-netflix), [Xbox Cloud Gaming](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-xbox-cloud-gaming), [GeForce NOW](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-geforce-now), [web browser in Game Mode](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-web-browser) and [adding a non-Steam game](https://steam-deck-web-app-generator.vercel.app/guides/add-non-steam-game).
 
 Results:
 

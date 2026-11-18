@@ -4,6 +4,27 @@
     <loc>https://steam-deck-web-app-generator.vercel.app/</loc>
   </url>
   <url>
+    <loc>https://steam-deck-web-app-generator.vercel.app/guides</loc>
+  </url>
+  <url>
+    <loc>https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-youtube</loc>
+  </url>
+  <url>
+    <loc>https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-netflix</loc>
+  </url>
+  <url>
+    <loc>https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-xbox-cloud-gaming</loc>
+  </url>
+  <url>
+    <loc>https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-geforce-now</loc>
+  </url>
+  <url>
+    <loc>https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-web-browser</loc>
+  </url>
+  <url>
+    <loc>https://steam-deck-web-app-generator.vercel.app/guides/add-non-steam-game</loc>
+  </url>
+  <url>
     <loc>https://steam-deck-web-app-generator.vercel.app/donate</loc>
   </url>
 </urlset>
