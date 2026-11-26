@@ -4,7 +4,7 @@
 <img src="https://halitsever-api.vercel.app/api/repo-title?title=Steam%20Deck%20Web%20App%20Generator">
 
 <p align="center">
-🛠️ Steam Deck web app generator: a Nuxt app that creates a shortcut script to add any website to Steam as a non-Steam game, so it opens in Chrome from Game Mode.
+Steam Deck web app generator: a Nuxt app that creates a shortcut script to add any website to Steam as a non-Steam game, so it opens in Chrome from Game Mode.
 <br>
 <br/>
 <br/>
@@ -19,8 +19,8 @@
 <img src="https://halitsever-api.vercel.app/api/details"/>
 </a>
 
-- 🧑‍💻 [**Create Shortcuts**](#) - Create shortcuts of your favorite websites
-- ✨ [**Chrome based**](#) - You just need installed chrome, thats it!
+- [**Create Shortcuts**](#) - Create shortcuts of your favorite websites
+- [**Chrome based**](#) - You just need installed chrome, thats it!
 
 <a align="center" >
 <img src="https://halitsever-api.vercel.app/api/installation"/>
