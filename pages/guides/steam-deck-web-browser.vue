@@ -1,7 +1,7 @@
 <template>
   <GuidePage
     seo-title="How to Use a Web Browser in Steam Deck Game Mode"
-    description="Get a web browser into Steam Deck Game Mode. Add Chrome to Steam as a non-Steam game for general browsing, or give a single website its own full-screen launcher."
+    description="Get a web browser into Steam Deck Game Mode. Add Chrome to Steam as a non-Steam game for general browsing, or give one website its own full-screen launcher."
     heading="Use a web browser in Steam Deck Game Mode"
     eyebrow="STEAM DECK WEB BROWSER"
   >
@@ -18,11 +18,14 @@
     </p>
     <ol class="guide-steps">
       <li>From the STEAM menu, select Power, then <strong>Switch to Desktop</strong>.</li>
-      <li>Install a browser such as Google Chrome from the Discover Software Center.</li>
+      <li>Install a browser such as Google Chrome from the Discover Software Center. The <NuxtLink to="/guides/install-chrome-steam-deck">Chrome install guide</NuxtLink> covers this step.</li>
       <li>Open the Steam client, click <strong>Add a Game</strong> in the lower left corner, then <strong>Add a Non-Steam Game</strong>, and pick the browser from the list.</li>
       <li>Select <strong>Return to Gaming Mode</strong> on the desktop. The browser now shows up in your library under <strong>Non-Steam</strong>.</li>
     </ol>
-    <p>You get the full browser with tabs and an address bar. Valve's FAQ notes that <strong>STEAM + X</strong> brings up the on-screen keyboard while Steam is running, which you will need for typing addresses.</p>
+    <p>
+      You get the full browser with tabs and an address bar. Valve's FAQ notes that <strong>STEAM + X</strong> brings up the on-screen keyboard while Steam is running, which you will need for typing addresses. The
+      <NuxtLink to="/steam-deck-shortcuts">shortcuts cheat sheet</NuxtLink> lists the other combos Valve documents.
+    </p>
 
     <h2>Add one website as its own launcher</h2>
     <p>

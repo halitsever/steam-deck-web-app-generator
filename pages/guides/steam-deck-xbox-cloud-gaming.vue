@@ -1,12 +1,13 @@
 <template>
   <GuidePage
-    seo-title="Xbox Cloud Gaming on Steam Deck: Edge Setup or Chrome Shortcut"
-    description="How to play Xbox Cloud Gaming on Steam Deck. Microsoft's official Edge setup, and how to add xbox.com/play to Game Mode as a Chrome shortcut with this generator."
-    heading="Xbox Cloud Gaming on Steam Deck"
+    seo-title="Xbox Cloud Gaming for Steam Deck: Edge or Chrome Setup"
+    description="Set up Xbox Cloud Gaming for Steam Deck: Microsoft's official Edge steps, or add xbox.com/play to Game Mode as a Chrome shortcut with this generator."
+    heading="How to set up Xbox Cloud Gaming for Steam Deck"
     eyebrow="STEAM DECK XBOX CLOUD GAMING"
   >
     <p class="guide-lead">
-      Xbox Cloud Gaming runs in a browser at xbox.com/play. Microsoft publishes its own Steam Deck setup for it, built on Microsoft Edge, and for most people that is the better route. This page explains both.
+      Xbox Cloud Gaming for Steam Deck runs in a browser at xbox.com/play; there is no separate SteamOS app. Microsoft publishes its own Steam Deck setup for it, built on Microsoft Edge, and for most people that is the
+      better route. This page explains both.
     </p>
 
     <h2>The official route: Microsoft Edge</h2>

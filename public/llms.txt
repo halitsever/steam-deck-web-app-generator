@@ -14,10 +14,12 @@ Enter an app name and a URL, download the generated .sh file, then in Desktop Mo
 - [All guides](https://steam-deck-web-app-generator.vercel.app/guides): index of the Steam Deck Game Mode guides
 - [YouTube on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-youtube): add youtube.com to Game Mode as a Chrome shortcut
 - [Netflix on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-netflix): Netflix shortcut setup and Netflix's own notes on Chrome for Linux
-- [Xbox Cloud Gaming on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-xbox-cloud-gaming): Microsoft's Edge setup and the Chrome shortcut alternative
+- [Xbox Cloud Gaming for Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-xbox-cloud-gaming): Microsoft's Edge setup and the Chrome shortcut alternative
 - [GeForce NOW on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-geforce-now): NVIDIA's Steam Deck app first, a browser shortcut as fallback
 - [Web browser in Game Mode](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-web-browser): add Chrome itself or a single site to the library
-- [Add a non-Steam game](https://steam-deck-web-app-generator.vercel.app/guides/add-non-steam-game): Valve's steps and how the generator adds a website as one
+- [Add non-Steam games to Steam and Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/add-non-steam-game): Valve's steps for the Steam client and for Steam Deck, and how the generator adds a website as one
+- [Install Chrome on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/install-chrome-steam-deck): Chrome from Discover, adding it to Game Mode, then per-site shortcuts
+- [Steam Deck shortcuts](https://steam-deck-web-app-generator.vercel.app/steam-deck-shortcuts): printable cheat sheet of the button combos and desktop controls Valve documents
 
 ## Optional
 

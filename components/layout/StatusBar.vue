@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const route = useRoute();
-const activeTab = computed(() => (route.path === "/donate" ? "donate" : route.path.startsWith("/guides") ? "guides" : "create"));
+/** The cheat sheet is reference material, so it lights up the Guides tab. */
+const activeTab = computed(() => (route.path === "/donate" ? "donate" : route.path.startsWith("/guides") || route.path === "/steam-deck-shortcuts" ? "guides" : "create"));
 </script>
 
 <template>

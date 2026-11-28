@@ -41,6 +41,7 @@ useSeoMeta({
           <li v-for="g in otherGuides" :key="g.path">
             <NuxtLink :to="g.path">{{ g.title }}</NuxtLink>
           </li>
+          <li><NuxtLink to="/steam-deck-shortcuts">Steam Deck shortcuts cheat sheet</NuxtLink></li>
         </ul>
       </nav>
     </footer>

@@ -18,7 +18,7 @@ export const guides: Guide[] = [
   },
   {
     path: "/guides/steam-deck-xbox-cloud-gaming",
-    title: "Xbox Cloud Gaming on Steam Deck",
+    title: "Xbox Cloud Gaming for Steam Deck",
     summary: "Microsoft's Edge setup, and when a Chrome shortcut for xbox.com/play is enough.",
   },
   {
@@ -33,7 +33,12 @@ export const guides: Guide[] = [
   },
   {
     path: "/guides/add-non-steam-game",
-    title: "Add a non-Steam game on Steam Deck",
-    summary: "What a non-Steam game is, Valve's steps, and how the generator adds one for you.",
+    title: "Add non-Steam games to Steam and Steam Deck",
+    summary: "Valve's steps for the Steam client on any PC and for Steam Deck, and how the generator adds a website.",
+  },
+  {
+    path: "/guides/install-chrome-steam-deck",
+    title: "Install Chrome on Steam Deck",
+    summary: "Get Google Chrome from Discover, add it to Game Mode, then give single sites their own shortcuts.",
   },
 ];
