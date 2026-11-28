@@ -2,7 +2,7 @@
   <GuidePage
     seo-title="How to Watch Netflix on Steam Deck in Game Mode"
     description="Add Netflix to Steam Deck Game Mode as a non-Steam game that opens in Chrome. Step-by-step setup, plus what Netflix says about Chrome on Linux and video quality."
-    heading="How to watch Netflix on Steam Deck in Game Mode"
+    heading="Add Netflix to Steam Deck Game Mode as a non-Steam game"
     eyebrow="STEAM DECK NETFLIX"
   >
     <p class="guide-lead">Netflix on Steam Deck means Netflix in a browser. The steps below add netflix.com to your Steam library as a non-Steam game, so it opens full screen in Chrome straight from Game Mode.</p>

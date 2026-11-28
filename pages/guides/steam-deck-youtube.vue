@@ -2,7 +2,7 @@
   <GuidePage
     seo-title="How to Watch YouTube on Steam Deck in Game Mode"
     description="Add YouTube to your Steam Deck library as a non-Steam game. Generate a script that creates a full-screen Chrome shortcut for youtube.com you can launch from Game Mode."
-    heading="How to watch YouTube on Steam Deck in Game Mode"
+    heading="Open YouTube from Steam Deck Game Mode like a game"
     eyebrow="STEAM DECK YOUTUBE"
   >
     <p class="guide-lead">
