@@ -4,6 +4,8 @@ const props = defineProps<{
   description: string;
   heading: string;
   eyebrow: string;
+  /** ISO date; when set, the guide is marked up as a BlogPosting by its author. */
+  published?: string;
 }>();
 
 const route = useRoute();
@@ -15,6 +17,32 @@ useSeoMeta({
   description: props.description,
   ogDescription: props.description,
 });
+
+const publishedLabel = computed(() => (props.published ? new Date(`${props.published}T00:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }) : ""));
+
+const site = "https://steam-deck-web-app-generator.vercel.app";
+if (props.published) {
+  useHead({
+    script: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: props.heading,
+          description: props.description,
+          image: `${site}/og.png`,
+          datePublished: props.published,
+          dateModified: props.published,
+          inLanguage: "en",
+          mainEntityOfPage: site + route.path,
+          author: { "@type": "Person", name: "Halit Sever", url: "https://www.halit.org" },
+          publisher: { "@type": "Person", name: "Halit Sever", url: "https://www.halit.org" },
+        }),
+      },
+    ],
+  });
+}
 </script>
 
 <template>
@@ -25,6 +53,9 @@ useSeoMeta({
         {{ eyebrow }}
       </div>
       <h1>{{ heading }}</h1>
+      <p v-if="published" class="panel-sub">
+        By <a href="https://www.halit.org" rel="author">Halit Sever</a> · <time :datetime="published">{{ publishedLabel }}</time>
+      </p>
     </header>
 
     <div class="guide-body">

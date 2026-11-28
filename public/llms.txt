@@ -19,6 +19,12 @@ Enter an app name and a URL, download the generated .sh file, then in Desktop Mo
 - [Web browser in Game Mode](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-web-browser): add Chrome itself or a single site to the library
 - [Add non-Steam games to Steam and Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/add-non-steam-game): Valve's steps for the Steam client and for Steam Deck, and how the generator adds a website as one
 - [Install Chrome on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/install-chrome-steam-deck): Chrome from Discover, adding it to Game Mode, then per-site shortcuts
+- [Steam Deck Desktop Mode](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-desktop-mode): switch to the desktop and back, controls, installing apps with Discover and running them in Game Mode
+- [Discord on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-discord): the Discord flatpak or discord.com in Chrome, voice chat while gaming and the microphone notes Valve documents
+- [Spotify on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-spotify): the Spotify flatpak or the web player in Chrome, and music while you play
+- [Steam Deck sudo password](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-sudo-password): no default password, setting one with passwd, and what Valve offers if it is forgotten
+- [Open the terminal on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-terminal): Konsole in Desktop Mode, typing with STEAM + X and running a .sh file
+- [SteamGridDB artwork on Steam Deck](https://steam-deck-web-app-generator.vercel.app/guides/steamgriddb-steam-deck): custom artwork for non-Steam shortcuts with SGDBoop or the Decky Loader plugin
 - [Steam Deck shortcuts](https://steam-deck-web-app-generator.vercel.app/steam-deck-shortcuts): printable cheat sheet of the button combos and desktop controls Valve documents
 
 ## Optional

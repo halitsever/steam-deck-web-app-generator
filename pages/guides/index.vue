@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const description = "Step-by-step guides for adding websites to Steam Deck Game Mode: YouTube, Netflix, Xbox Cloud Gaming, GeForce NOW, a web browser and non-Steam games in general.";
+const description = "Steam Deck guides: YouTube, Netflix, Xbox Cloud Gaming, Discord and Spotify in Game Mode, Desktop Mode, the terminal, sudo and artwork for shortcuts.";
 
 useSeoMeta({
   title: "Steam Deck Game Mode Guides | Steam Deck Web App Generator",
