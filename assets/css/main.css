@@ -837,7 +837,8 @@ textarea {
   font-weight: 700;
 }
 .guide-body a,
-.guide-links a {
+.guide-links a,
+.panel-sub a {
   color: var(--accent);
   text-underline-offset: 3px;
 }
@@ -958,6 +959,36 @@ textarea {
 .shortcuts-aside p {
   margin: 0;
   line-height: 1.55;
+}
+.guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 0 0 var(--gap-2);
+}
+.guide-table th,
+.guide-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line-strong);
+  overflow-wrap: anywhere;
+}
+.guide-table thead th {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.guide-table tbody th {
+  font-weight: 600;
+}
+@media (max-width: 520px) {
+  .guide-table th,
+  .guide-table td {
+    padding: 8px 6px;
+    font-size: 13px;
+  }
 }
 .shortcut-table {
   width: 100%;
