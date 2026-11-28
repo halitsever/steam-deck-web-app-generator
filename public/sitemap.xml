@@ -25,6 +25,12 @@
     <loc>https://steam-deck-web-app-generator.vercel.app/guides/add-non-steam-game</loc>
   </url>
   <url>
+    <loc>https://steam-deck-web-app-generator.vercel.app/guides/install-chrome-steam-deck</loc>
+  </url>
+  <url>
+    <loc>https://steam-deck-web-app-generator.vercel.app/steam-deck-shortcuts</loc>
+  </url>
+  <url>
     <loc>https://steam-deck-web-app-generator.vercel.app/donate</loc>
   </url>
 </urlset>

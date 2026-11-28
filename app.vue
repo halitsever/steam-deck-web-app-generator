@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const site = "https://steam-deck-web-app-generator.vercel.app";
-const description = "Add any website or web app to Steam Deck Game Mode as a non-Steam game. Generate a script that adds a full-screen Chrome shortcut for the site to your Steam library.";
+const description = "Add any website or web app to Steam Deck Game Mode as a non-Steam game. Generate a script that adds a full-screen Chrome shortcut for the site to your library.";
 const route = useRoute();
 const pageUrl = computed(() => site + route.path);
 

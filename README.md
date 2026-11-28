@@ -46,7 +46,7 @@ You can change the icons of apps via steam grid db extension of decky loader.
 
 <b>Note</b>: You need installed chrome(flatpak version-default one) on your steam deck.
 
-Guides: [YouTube](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-youtube), [Netflix](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-netflix), [Xbox Cloud Gaming](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-xbox-cloud-gaming), [GeForce NOW](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-geforce-now), [web browser in Game Mode](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-web-browser) and [adding a non-Steam game](https://steam-deck-web-app-generator.vercel.app/guides/add-non-steam-game).
+Guides: [YouTube](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-youtube), [Netflix](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-netflix), [Xbox Cloud Gaming](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-xbox-cloud-gaming), [GeForce NOW](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-geforce-now), [web browser in Game Mode](https://steam-deck-web-app-generator.vercel.app/guides/steam-deck-web-browser), [installing Chrome](https://steam-deck-web-app-generator.vercel.app/guides/install-chrome-steam-deck) and [adding a non-Steam game](https://steam-deck-web-app-generator.vercel.app/guides/add-non-steam-game). There is also a printable [Steam Deck shortcuts cheat sheet](https://steam-deck-web-app-generator.vercel.app/steam-deck-shortcuts).
 
 Results:
 

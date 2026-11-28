@@ -927,6 +927,172 @@ textarea {
   line-height: 1.5;
 }
 
+.guide-body h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin: var(--gap-4) 0 var(--gap-1);
+}
+
+/* =====================================================================
+   Shortcuts cheat sheet
+   ===================================================================== */
+.shortcuts-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: var(--gap-5);
+  align-items: start;
+}
+.shortcuts-aside {
+  position: sticky;
+  top: 0;
+  display: grid;
+  gap: var(--gap-3);
+  font-size: 14px;
+  color: var(--ink-1);
+}
+.shortcuts-aside h2 {
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0;
+}
+.shortcuts-aside p {
+  margin: 0;
+  line-height: 1.55;
+}
+.shortcut-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 0 0 var(--gap-2);
+}
+.shortcut-table th,
+.shortcut-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line-strong);
+}
+.shortcut-table thead th {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.shortcut-table tbody th {
+  font-weight: 600;
+  width: 48%;
+}
+.shortcut-table kbd {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12.5px;
+  padding: 2px 7px;
+  border-radius: 5px;
+  border: 1px solid var(--line-strong);
+  background: rgba(0, 0, 0, 0.45);
+  color: var(--ink-0);
+  margin: 2px 0;
+}
+.kbd-join {
+  margin: 0 6px;
+  color: var(--ink-2);
+  font-size: 12px;
+}
+.shortcut-source {
+  font-size: 13px;
+  color: var(--ink-2);
+}
+.print-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line-strong);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--ink-0);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.print-btn:hover {
+  border-color: var(--accent);
+}
+@media (max-width: 900px) {
+  .shortcuts-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .shortcuts-aside {
+    position: static;
+  }
+}
+
+/* The app shell is a fixed-height screen; printing needs normal page flow on white paper. */
+@media print {
+  html,
+  body,
+  #__nuxt {
+    height: auto;
+  }
+  body {
+    overflow: visible;
+    background: #fff;
+    color: #000;
+  }
+  .deck-screen {
+    display: block;
+    height: auto;
+    overflow: visible;
+    background: none;
+  }
+  .stage {
+    overflow: visible;
+    padding: 0;
+  }
+  .status-bar,
+  .hint-bar,
+  .bg-noise,
+  .bg-vignette,
+  .no-print {
+    display: none !important;
+  }
+  .shortcuts-layout {
+    display: block;
+  }
+  .panel {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  .panel::before {
+    display: none;
+  }
+  .panel h1,
+  .guide-body,
+  .guide-panel h2,
+  .panel-sub,
+  .shortcut-table th,
+  .shortcut-table td,
+  .shortcut-source,
+  .panel-eyebrow {
+    color: #000;
+  }
+  .shortcut-table th,
+  .shortcut-table td {
+    border-color: #bbb;
+  }
+  .shortcut-table kbd {
+    background: #fff;
+    color: #000;
+    border-color: #777;
+  }
+  .shortcut-group {
+    break-inside: avoid;
+  }
+}
+
 /* =====================================================================
    Hint bar (bottom) — gamepad button hints
    ===================================================================== */

@@ -14,7 +14,7 @@ const byteCount = computed(() => new Blob([script.value]).size);
         <span class="dot" aria-hidden="true" />
         NON-STEAM SHORTCUT
       </div>
-      <h1 id="panel-title">Add a website to Steam Deck Game Mode</h1>
+      <h1 id="panel-title">Add any website to your Steam Deck</h1>
       <p class="panel-sub">Turn any website or web app into a non-Steam game that opens in Chrome from Game Mode. Fill the fields, generate the script, and run it once in Desktop Mode.</p>
     </div>
 
@@ -153,7 +153,10 @@ const byteCount = computed(() => new Blob([script.value]).size);
   <section class="panel guide-panel" aria-labelledby="guides-title">
     <div class="panel-header">
       <h2 id="guides-title">Steam Deck guides</h2>
-      <p class="panel-sub">Step-by-step setups for popular sites, and when the service's own app is the better choice.</p>
+      <p class="panel-sub">
+        Step-by-step setups for popular sites, and when the service's own app is the better choice. Need the button combos? See the
+        <NuxtLink to="/steam-deck-shortcuts">Steam Deck shortcuts cheat sheet</NuxtLink>.
+      </p>
     </div>
     <ul class="guide-cards">
       <li v-for="g in guides" :key="g.path">
